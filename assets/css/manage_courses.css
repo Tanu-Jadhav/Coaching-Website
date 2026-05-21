@@ -1,0 +1,243 @@
+/*  BODY  */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+/*  MAIN CONTAINER  */
+.main {
+    padding: 30px;
+}
+
+/*  HEADER  */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*  HEADING  */
+h2 {
+    margin-bottom: 20px;
+    color: #0A2540;
+}
+
+/*  BACK BUTTON  */
+.back-btn {
+    margin-left: auto;
+    background: #0A2540;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #061726;
+}
+
+/*  SUCCESS MESSAGE  */
+.success {
+    color: green;
+    margin-bottom: 15px;
+}
+
+/*  FORM  */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+/* INPUTS */
+form input {
+    padding: 10px;
+    margin: 8px 10px 8px 0;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* BUTTON */
+form button {
+    padding: 10px 15px;
+    background: #0A2540;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #F5B400;
+}
+
+/*  TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* HEADER */
+table th {
+    background: #0A2540;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+/* ROWS */
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+/* HOVER */
+table tr:hover {
+    background: #f1f1f1;
+}
+
+td.action-icons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+/* ICON BUTTON */
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+/* EDIT */
+.icon-btn.edit {
+    background: #28a745;
+}
+
+/* DELETE */
+.icon-btn.delete {
+    background: #dc3545;
+}
+
+/* HOVER EFFECT */
+.icon-btn:hover {
+    opacity: 0.85;
+    transform: scale(1.08);
+}
+
+/* ============================= */
+/* 📱 MOBILE (max-width: 576px) */
+/* ============================= */
+@media (max-width: 576px) {
+
+    .main {
+        padding: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .back-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    /* FORM */
+    form {
+        padding: 15px;
+    }
+
+    form input {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    form button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* TABLE SCROLL */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* ICON SIZE SMALL */
+    .icon-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+
+/* ============================= */
+/* 📲 TABLET (577px - 991px) */
+/* ============================= */
+@media (min-width: 577px) and (max-width: 991px) {
+
+    .main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    form input {
+        width: 48%;
+    }
+
+    form button {
+        margin-top: 10px;
+    }
+
+    table th,
+    table td {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+
+/* ============================= */
+/* 💻 LARGE SCREEN IMPROVEMENT */
+/* ============================= */
+@media (min-width: 992px) {
+
+    .main {
+        max-width: 1200px;
+        margin: auto;
+    }
+}

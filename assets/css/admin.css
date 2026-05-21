@@ -1,0 +1,90 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background: #007bff;
+    color: #fff;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Wrapper for horizontal scroll */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* ===============================
+   SMALL MOBILE (max 480px)
+================================ */
+@media (max-width: 480px){
+
+    table {
+        font-size: 13px;
+        min-width: 600px; /* enables scroll */
+    }
+
+    table th, 
+    table td {
+        padding: 8px;
+    }
+}
+
+/* ===============================
+   MOBILE (481px - 768px)
+================================ */
+@media (min-width: 481px) and (max-width: 768px){
+
+    table {
+        font-size: 14px;
+        min-width: 700px;
+    }
+
+    table th, 
+    table td {
+        padding: 10px;
+    }
+}
+
+/* ===============================
+   TABLET (769px - 1024px)
+================================ */
+@media (min-width: 769px) and (max-width: 1024px){
+
+    table {
+        font-size: 15px;
+    }
+
+    table th, 
+    table td {
+        padding: 11px;
+    }
+}
+
+/* ===============================
+   LARGE SCREEN (1025px+)
+================================ */
+@media (min-width: 1025px){
+
+    table {
+        font-size: 16px;
+    }
+}

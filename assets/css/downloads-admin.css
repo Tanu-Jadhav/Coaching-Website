@@ -1,0 +1,139 @@
+body {
+    font-family: Arial;
+    background: #f4f6f9;
+    padding: 20px;
+}
+
+.upload-box {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.upload-box input, .upload-box select {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background: #007bff;
+    color: #fff;
+}
+
+/* ===============================
+   SMALL MOBILE (max 480px)
+================================ */
+@media (max-width: 480px){
+
+    body{
+        padding: 10px;
+    }
+
+    /* UPLOAD BOX */
+    .upload-box{
+        padding: 15px;
+    }
+
+    .upload-box input,
+    .upload-box select{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    button{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* TABLE SCROLL */
+    .table-responsive{
+        overflow-x: auto;
+    }
+
+    table{
+        min-width: 600px; /* enable horizontal scroll */
+        font-size: 13px;
+    }
+
+    table th, 
+    table td{
+        padding: 8px;
+    }
+}
+
+/* ===============================
+   MOBILE (481px - 768px)
+================================ */
+@media (min-width: 481px) and (max-width: 768px){
+
+    body{
+        padding: 15px;
+    }
+
+    .upload-box{
+        padding: 18px;
+    }
+
+    .upload-box input,
+    .upload-box select{
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    .table-responsive{
+        overflow-x: auto;
+    }
+
+    table{
+        min-width: 700px;
+        font-size: 14px;
+    }
+}
+
+/* ===============================
+   TABLET (769px - 1024px)
+================================ */
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .upload-box{
+        padding: 20px;
+    }
+
+    table{
+        font-size: 15px;
+    }
+}
+
+/* ===============================
+   LARGE SCREEN (1025px+)
+================================ */
+@media (min-width: 1025px){
+
+    table{
+        font-size: 16px;
+    }
+}

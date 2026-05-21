@@ -1,0 +1,266 @@
+:root {
+    --blue: #0A2540;
+    --gold: #F5B400;
+    --white: #fff;
+    --light: #f8f9fa;
+}
+
+/* SECTION */
+.results-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: var(--light);
+}
+
+.title {
+    color: var(--blue);
+    margin-bottom: 30px;
+}
+
+/* RESULT CARDS */
+.results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
+
+.result-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.result-card:hover {
+    transform: translateY(-8px);
+}
+
+.result-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid var(--gold);
+}
+
+.marks {
+    font-size: 20px;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.rank {
+    display: inline-block;
+    background: var(--gold);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+/* ACHIEVEMENTS */
+.achievement-section {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(135deg, transparent, #4a90e2);
+    color: white;
+    padding: 40px 20px;
+}
+
+.achievement-box h2 {
+    color: var(--gold);
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+    padding: 70px 20px;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.testimonial-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* SLIDER */
+.slider {
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    animation: fade 0.5s ease;
+}
+
+.slide img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #F5B400;
+    margin-bottom: 10px;
+}
+
+.message {
+    font-style: italic;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* ARROWS */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;   /* NO BACKGROUND */
+    border: none;
+    font-size: 30px;
+    color: #0A2540;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    color: #F5B400;
+}
+
+.left {
+    left: -140px;
+}
+
+.right {
+    right: -140px;
+}
+
+/* ANIMATION */
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* TABLET VIEW (≤ 992px) */
+@media (max-width: 992px) {
+
+    .results-section {
+        padding: 50px 20px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .result-card {
+        padding: 18px;
+    }
+
+    /* Achievement */
+    .achievement-section {
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .achievement-box {
+        flex: 1 1 45%;
+    }
+
+    /* Slider arrows */
+    .left {
+        left: -40px;
+    }
+
+    .right {
+        right: -40px;
+    }
+}
+
+
+/*  MOBILE VIEW (≤ 768px) */
+@media (max-width: 768px) {
+
+    .results-section {
+        padding: 40px 15px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .results-container {
+        gap: 15px;
+    }
+
+    .result-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .marks {
+        font-size: 18px;
+    }
+
+    /* Achievement */
+    .achievement-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Testimonial section */
+    .testimonial-section {
+        padding: 50px 15px;
+    }
+
+    .slide img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .message {
+        font-size: 14px;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+
+/* SMALL MOBILE (≤ 480px) */
+@media (max-width: 480px) {
+
+    .title {
+        font-size: 20px;
+    }
+
+    .result-card {
+        padding: 15px;
+    }
+
+    .result-card img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .marks {
+        font-size: 16px;
+    }
+
+    .rank {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .testimonial-section {
+        padding: 40px 10px;
+    }
+
+    .message {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,189 @@
+.demo-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, transparent, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container */
+.demo-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 420px;
+    max-width: 95%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 0.4s ease;
+}
+
+/* Title */
+.demo-container h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.demo-container h1 span {
+    color: #0d6efd;
+}
+
+/* Offer text */
+.demo-offer {
+    color: #ff6600;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Success */
+.success-msg {
+    background: #e6f7ec;
+    color: green;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+.demo-submit {
+    width: 100%;
+    padding: 12px;
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.demo-submit:hover {
+    background: #e65c00;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===============================
+   SMALL MOBILE (max 480px)
+================================ */
+@media (max-width: 480px){
+
+    .demo-page{
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .demo-container{
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .demo-container h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .demo-offer{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .success-msg{
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .form-group label{
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group select{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .demo-submit{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* ===============================
+   MOBILE (481px - 768px)
+================================ */
+@media (min-width: 481px) and (max-width: 768px){
+
+    .demo-page{
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .demo-container{
+        width: 90%;
+        padding: 25px;
+    }
+
+    .demo-container h1{
+        font-size: 22px;
+    }
+
+    .demo-offer{
+        font-size: 15px;
+    }
+
+    .form-group input,
+    .form-group select{
+        font-size: 15px;
+    }
+
+    .demo-submit{
+        font-size: 15px;
+    }
+}
+
+/* ===============================
+   TABLET (769px - 1024px)
+================================ */
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .demo-container{
+        width: 70%;
+        padding: 30px;
+    }
+
+    .demo-container h1{
+        font-size: 23px;
+    }
+}

@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f3f4f6;
+    color: #333;
+}
+
+/*  MAIN CONTAINER  */
+.refer-container {
+    max-width: 650px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/*  HEADER  */
+.refer-header {
+    background: linear-gradient(90deg, #1e66d0, #3b82f6);
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+.refer-header h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.refer-header p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/*  FORM  */
+form {
+    padding: 25px;
+}
+
+.info-text {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/*  LABEL  */
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 15px;
+}
+
+/*  INPUT  */
+input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 5px rgba(59,130,246,0.3);
+}
+
+/*  SECTION DIVIDER  */
+hr {
+    margin: 25px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+/*  FRIEND SECTION  */
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*  FRIEND ROW  */
+.friend-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.friend-row input {
+    flex: 1;
+}
+
+/*  DELETE BUTTON  */
+.delete-btn {
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: #e60000;
+}
+
+/*  ADD BUTTON  */
+.add-btn {
+    margin-top: 12px;
+    background: #e6f0ff;
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #3b82f6;
+    color: #fff;
+}
+
+/*  SUBMIT BUTTON  */
+.submit-btn {
+    width: 100%;
+    background: #1f8a5f;
+    color: #fff;
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #166c49;
+}
+
+/* TABLET VIEW (≤ 992px) */
+@media (max-width: 992px) {
+
+    .refer-container {
+        max-width: 90%;
+        margin: 30px auto;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .refer-header {
+        padding: 20px;
+    }
+
+    .refer-header h2 {
+        font-size: 20px;
+    }
+}
+
+
+/*  MOBILE VIEW (≤ 768px)*/
+@media (max-width: 768px) {
+
+    .refer-container {
+        max-width: 95%;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    .refer-header {
+        padding: 18px;
+    }
+
+    .refer-header h2 {
+        font-size: 18px;
+    }
+
+    .refer-header p {
+        font-size: 13px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .friend-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .delete-btn {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .add-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .submit-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+
+/* SMALL MOBILE (≤ 480px) */
+@media (max-width: 480px) {
+
+    .refer-container {
+        margin: 15px;
+    }
+
+    .refer-header {
+        padding: 15px;
+    }
+
+    .refer-header h2 {
+        font-size: 16px;
+    }
+
+    .refer-header p {
+        font-size: 12px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .submit-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .add-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

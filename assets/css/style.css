@@ -1,0 +1,206 @@
+/* Common */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Login & Register */
+.auth-body {
+    background: #0A2540;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 320px;
+}
+
+.auth-box h2 {
+    text-align: center;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 10px;
+    background: #F5B400;
+    border: none;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+/* Dashboard */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #0A2540;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 20px;
+    background: #f4f6f9;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* TABLET VIEW (≤ 992px) */
+@media (max-width: 992px) {
+
+    /* Sidebar */
+    .sidebar {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .main {
+        padding: 15px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 45%;
+    }
+}
+
+
+/* MOBILE VIEW (≤ 768px) */
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    /* Sidebar  */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .sidebar ul li {
+        margin: 5px 0;
+    }
+
+    /* Main */
+    .main {
+        padding: 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .auth-box {
+        width: 90%;
+        max-width: 350px;
+        padding: 25px;
+    }
+
+    .auth-body {
+        padding: 20px;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+
+/* SMALL MOBILE (≤ 480px) */
+@media (max-width: 480px) {
+
+    .auth-box {
+        padding: 20px;
+    }
+
+    .auth-box h2 {
+        font-size: 18px;
+    }
+
+    .auth-box input {
+        padding: 9px;
+        font-size: 13px;
+    }
+
+    .auth-box button {
+        padding: 9px;
+        font-size: 14px;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
+
+    .sidebar a {
+        font-size: 14px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}

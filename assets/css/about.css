@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    width: 100%;
+}
+
+/* HERO */
+.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('../uploads/images/about-bg.jpg') center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-hero p{
+    color: #000;
+}
+
+/* SECTION */
+.about-section {
+    padding: 50px 10%;
+}
+
+.bg-light {
+    background: #f5f5f5;
+}
+
+/* GRID */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* DIRECTOR SECTION */
+.director-section {
+    padding: 70px 10%;
+    background: linear-gradient(to right, #eef2f7, #f8f9fa);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
+    color: #0d2c54;
+}
+
+/* CARD */
+.director-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(to right, #eef2f7, gold);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.director-img img {
+    width: 260px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* TEXT */
+.director-text h3 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.qualification {
+    color: rgb(67, 67, 72) !important;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* QUOTE BOX 🔥 */
+.quote-box {
+    background: #031c43;
+    color: red ;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-style: italic;
+    position: relative;
+}
+
+.director-text .quote-box p {
+    color: #fff !important;
+}
+
+.quote-box::before {
+    content: "“";
+    font-size: 40px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+/* TEXT */
+.director-text p {
+    margin-bottom: 10px;
+    color: rgb(67, 67, 72) !important;;
+    line-height: 1.6;
+}
+
+/* HOVER EFFECT */
+.director-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/*  Faculty  */
+.faculty-card{
+  padding:5px;
+  border-radius:15px;
+  background:#fff;
+  text-align:center;
+  height:100%;
+  margin-left: 50px;
+  width: 20%;
+  min-width: 300px;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: transparent !important;
+    opacity: 1;
+    width: auto;
+}
+
+.carousel-control-prev::after {
+    content: "❮";
+    font-size: 35px;
+    color: #000;
+    margin-left: 1% !important;
+}
+
+.carousel-control-next::after {
+    content: "❯";
+    font-size: 35px;
+    color: #000;
+    margin-right: 5%;
+}
+
+/* Hover effect */
+.carousel-control-prev:hover::after,
+.carousel-control-next:hover::after {
+    color: #0d6efd;
+}
+
+/*  ACHIEVEMENTS SECTION  */
+.achievements-section {
+    padding: 60px 10%;
+    text-align: center;
+    background: linear-gradient(135deg, transparent, #4a90e2);
+    color: #fff;
+}
+
+.achievements-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    margin-bottom: 40px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Container */
+.achievements-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 25px;
+}
+
+/* Card */
+.achievement-card {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+/* Icon */
+.achievement-card .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Number */
+.achievement-card h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+/* Hover Effect */
+.achievement-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.2);
+}
+
+/* RESPONSIVE */
+@media(min-width:769px) and (max-width: 1024px){
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .faculty-card {
+        min-width: 240px;
+    }
+
+    .director-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .director-img img {
+        width: 200px;
+    }
+
+    .achievements-section {
+        padding: 40px 20px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none !important;
+    }
+}

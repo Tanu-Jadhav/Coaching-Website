@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  
+}
+
+/*  NAVBAR   */
+.custom-navbar {
+  background: #0d2b45;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  
+  
+}
+
+/*  LOGO  */
+.navbar-brand {
+  font-size: 22px;
+  color: #fff !important;
+  letter-spacing: 1px;
+  font-weight:700;
+
+}
+
+/*  NAV LINKS  */
+.navbar .nav-link {
+  color: #fff !important;
+  margin: 0 8px;
+  font-size: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+  margin-left:15px;
+  font-weight:500;
+}
+
+/* Hover Effect */
+.navbar .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Underline  */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: #ffc107;
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/*  ACTIVE LINK  */
+.navbar .nav-link.active {
+  color: #ffc107 !important;
+  font-weight: 600;
+}
+
+.navbar .nav-link.active::after {
+  width: 100%;
+}
+
+/*  USER DROPDOWN  */
+.navbar .dropdown-menu {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  padding: 10px 0;
+}
+
+.navbar .dropdown-item {
+  padding: 10px 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.navbar .dropdown-item:hover {
+  background: #f8f9fa;
+  padding-left: 25px;
+}
+
+/*  ICON   */
+.navbar .fa-user-circle {
+  font-size: 18px;
+}
+
+/*  TOGGLER  */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.custom-enroll-btn {
+  background: linear-gradient(45deg, #c59d5f, #e6c07b);
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+
+.custom-enroll-btn:hover {
+  background: linear-gradient(45deg, #a67c3b, #d4a95f);
+  transform: translateY(-2px);
+}
+
+/*  MOBILE RESPONSIVE  */
+@media (max-width: 991px) {
+
+  .navbar-collapse {
+    background: #1b263b;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar .nav-link {
+    margin: 8px 0;
+  }
+
+  .navbar .btn-warning {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .navbar .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .navbar .dropdown-item {
+    color: #fff;
+  }
+
+}
+
+/* NAVBAR   */
+.custom-navbar.scrolled {
+  background: #0d1b2a !important;
+  padding: 8px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/*==================== NAVBAR ==================*/
+
+/*  FOOTER  */
+.footer {
+  background: #0d2b45; 
+  color: #fff;
+  padding: 60px 0 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*  HEADINGS  */
+.footer-heading {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/*  BRANCH  */
+.branch {
+  margin-bottom: 20px;
+}
+
+.branch p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.branch span {
+  display: block;
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-left: 22px;
+}
+
+/* ICONS */
+.branch i {
+  color: #ffc107;
+  margin-right: 8px;
+}
+
+/*  LINKS  */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #cbd5e1;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* hover */
+.footer-links a:hover {
+  color: #ffc107;
+  padding-left: 6px;
+}
+
+/*  CONNECT TITLE  */
+.connect-title {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  margin-left: 45%;
+}
+
+/*  SOCIAL ICONS  */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ICON  */
+.footer-social a {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.1); 
+  color: #fff;
+
+  transition: 0.3s ease;
+}
+
+/* hover */
+.footer-social a:hover {
+  background: #ffc107;
+  color: #000;
+  transform: translateY(-4px);
+}
+
+/*  BOTTOM  */
+.footer-bottom {
+  text-align: center;
+  margin-top: 35px;
+  padding-top: 15px;
+
+  font-size: 14px;
+  color: #cbd5e1;
+
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-radius: 250px;
+}
+
+.footer .row {
+  align-items: flex-start;
+}
+
+/*  RESPONSIVE  */
+@media (max-width: 991px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .branch span {
+    margin-left: 0;
+  }
+}
+
+.container .contact-info a{
+ color: #fff !important;
+ text-decoration: none;
+}
+
+.container .contact-info .fas{
+ color: goldenrod !important;
+ margin-right: 5px;
+}
+
+/* MOBILE (max-width: 576px) */
+@media (max-width: 576px) {
+
+  /* NAVBAR */
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .navbar .nav-link {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .navbar-collapse {
+    padding: 12px;
+  }
+
+  .navbar .nav-link::after {
+    display: none;
+  }
+
+  /* BUTTON  */
+  .navbar .btn-warning {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 40px 15px 20px;
+  }
+
+  .footer-heading {
+    font-size: 18px;
+  }
+
+  .branch p {
+    font-size: 14px;
+  }
+
+  .branch span {
+    font-size: 13px;
+  }
+
+  .footer-links li {
+    font-size: 14px;
+  }
+
+  .connect-title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* SOCIAL ICONS */
+  .footer-social a {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+  }
+}
+
+
+/*  TABLET (577px - 991px) */
+@media (min-width: 577px) and (max-width: 991px) {
+
+  /* NAVBAR */
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar .nav-link {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 50px 20px 20px;
+  }
+
+  .footer-heading {
+    font-size: 19px;
+  }
+
+  .connect-title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+
+/*  SMALL LAPTOP (992px - 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  .navbar .nav-link {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .container {
+    max-width: 95%;
+  }
+}

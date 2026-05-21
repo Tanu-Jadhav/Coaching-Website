@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+.edit-section {
+    padding: 30px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    color: #0A2540;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    background: #0A2540;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/*  FORM  */
+.edit-form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* IMAGE PREVIEW */
+.preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+    object-fit: cover;
+}
+
+/* INPUT */
+.edit-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.edit-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #0A2540;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.edit-form button:hover {
+    background: #F5B400;
+}
+
+/* ===============================
+   SMALL MOBILE (max 480px)
+================================ */
+@media (max-width: 480px){
+
+    .edit-section{
+        padding: 15px;
+    }
+
+    /* HEADER */
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header h2{
+        font-size: 20px;
+    }
+
+    .back-btn{
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+
+    /* FORM */
+    .edit-form{
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    /* IMAGE */
+    .preview{
+        width: 70px;
+        height: 70px;
+    }
+
+    /* INPUT */
+    .edit-form input{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* BUTTON */
+    .edit-form button{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* ===============================
+   MOBILE (481px - 768px)
+================================ */
+@media (min-width: 481px) and (max-width: 768px){
+
+    .edit-section{
+        padding: 20px;
+    }
+
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .edit-form{
+        width: 90%;
+        padding: 22px;
+    }
+
+    .preview{
+        width: 75px;
+        height: 75px;
+    }
+}
+
+/* ===============================
+   TABLET (769px - 1024px)
+================================ */
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .edit-form{
+        width: 70%;
+    }
+
+    .header h2{
+        font-size: 24px;
+    }
+}

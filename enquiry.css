@@ -1,0 +1,215 @@
+body.auth-body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* SECTION */
+.enquiry-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, transparent, #4a90e2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+.container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: gray;
+    margin-bottom: 25px;
+}
+
+/* SUCCESS */
+.success {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* FORM */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* TEXTAREA */
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.clear-btn {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.submit-btn {
+    background: linear-gradient(45deg, #28a745, #5dd65d);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.clear-btn:hover {
+    background: #c82333;
+}
+
+.submit-btn:hover {
+    background: #218838;
+}
+
+/* ===============================
+   SMALL MOBILE (max 480px)
+================================ */
+@media (max-width: 480px){
+
+    /* SECTION */
+    .enquiry-section{
+        padding: 30px 10px;
+        align-items: flex-start;
+    }
+
+    /* CONTAINER */
+    .container{
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .container h1{
+        font-size: 20px;
+    }
+
+    .subtitle{
+        font-size: 13px;
+    }
+
+    .success{
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    /* INPUTS */
+    input,
+    select,
+    textarea{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    textarea{
+        height: 80px;
+    }
+
+    /* BUTTONS STACK */
+    .buttons{
+        flex-direction: column;
+    }
+
+    .clear-btn,
+    .submit-btn{
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* ===============================
+   MOBILE (481px - 768px)
+================================ */
+@media (min-width: 481px) and (max-width: 768px){
+
+    .enquiry-section{
+        padding: 40px 15px;
+        align-items: flex-start;
+    }
+
+    .container{
+        padding: 25px;
+    }
+
+    .container h1{
+        font-size: 22px;
+    }
+
+    .subtitle{
+        font-size: 14px;
+    }
+
+    /* BUTTONS */
+    .buttons{
+        flex-direction: column;
+    }
+
+    .clear-btn,
+    .submit-btn{
+        width: 100%;
+    }
+}
+
+/* ===============================
+   TABLET (769px - 1024px)
+================================ */
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .container{
+        width: 80%;
+        padding: 30px;
+    }
+
+    .container h1{
+        font-size: 24px;
+    }
+}

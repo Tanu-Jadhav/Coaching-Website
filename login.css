@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0A2540, #1c3b5a);
+}
+
+/*  CONTAINER  */
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  LOGIN BOX  */
+.login-box {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(25px);
+    padding: 40px;
+    width: 360px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    color: #fff;
+    text-align: center;
+}
+
+/* TITLE */
+.login-box h1 {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.sub-text {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+/*  ERROR BOX  */
+.error-box {
+    background: rgba(255, 77, 77, 0.15);
+    border: 1px solid #ff4d4d;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.error-box ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.error-box li {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+/*  INPUT GROUP  */
+.input-group {
+    position: relative;
+    margin-bottom: 22px;
+    min-width: 100px;
+    max-width: 270px;
+}
+
+/* INPUT FIELD */
+.input-group input {
+    width: 100%;
+    padding: 14px 45px 14px 42px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* PLACEHOLDER */
+.input-group input::placeholder {
+    color: transparent;
+}
+
+.input-group label {
+    position: absolute;
+    left: 42px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 13px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+/* ICON  */
+.input-group i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #bbb;
+}
+
+.input-group .fa-eye {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+    margin-left: 40px;
+}
+
+/* PASSWORD TOGGLE */
+.toggle-pass {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #bbb;
+    margin-left: 40px;
+}
+
+/* FOCUS EFFECT */
+.input-group input:focus {
+    border-color: #F5B400;
+    background: rgba(255,255,255,0.12);
+    box-shadow: 0 0 10px rgba(245,180,0,0.4);
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -7px;
+    font-size: 11px;
+    color: #F5B400;
+    background: #1c3b5a;
+    padding: 0 6px;
+    border-radius: 4px;
+}
+
+/*  BUTTON  */
+.login-btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    border: none;
+    background: #F5B400;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #e0a800;
+    transform: translateY(-1px);
+}
+
+/*  REGISTER TEXT  */
+.register-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.register-text a {
+    color: #F5B400;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   SMALL MOBILE (max 480px)
+================================ */
+@media (max-width: 480px){
+
+    body{
+        height: auto;
+        padding: 20px 10px;
+        align-items: flex-start;
+    }
+
+    .login-box{
+        width: 100%;
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    .login-box h1{
+        font-size: 22px;
+    }
+
+    .sub-text{
+        font-size: 13px;
+    }
+
+    /* INPUT */
+    .input-group{
+        max-width: 100%;
+    }
+
+    .input-group input{
+        padding: 12px 40px;
+        font-size: 14px;
+    }
+
+    .input-group label{
+        font-size: 12px;
+    }
+
+    /* ICON */
+    .input-group i{
+        font-size: 14px;
+    }
+
+    .toggle-pass{
+        right: 10px;
+        font-size: 14px;
+    }
+
+    /* BUTTON */
+    .login-btn{
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .register-text{
+        font-size: 13px;
+    }
+}
+
+/* ===============================
+   MOBILE (481px - 768px)
+================================ */
+@media (min-width: 481px) and (max-width: 768px){
+
+    body{
+        height: auto;
+        padding: 30px 15px;
+        align-items: flex-start;
+    }
+
+    .login-box{
+        width: 90%;
+        padding: 30px;
+    }
+
+    .login-box h1{
+        font-size: 24px;
+    }
+
+    .input-group{
+        max-width: 100%;
+    }
+}
+
+/* ===============================
+   TABLET (769px - 1024px)
+================================ */
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .login-box{
+        width: 400px;
+    }
+}

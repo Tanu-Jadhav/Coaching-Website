@@ -1,0 +1,196 @@
+:root {
+    --blue: #0A2540;
+    --gold: #F5B400;
+    --white: #FFFFFF;
+    --light: #f8f9fa;
+}
+
+/* SECTION */
+.faculty-details {
+    padding: 70px 20px;
+    background: var(--light);
+    display: flex;
+    justify-content: center;
+}
+
+/* CARD */
+.details-card {
+    max-width: 600px;
+    width: 100%;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* HEADER */
+.profile-header img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid var(--gold);
+    margin-bottom: 10px;
+}
+
+.profile-header h2 {
+    color: var(--blue);
+}
+
+.badge-exp {
+    display: inline-block;
+    background: var(--gold);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* RATING */
+.rating {
+    color: var(--gold);
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* INFO */
+.profile-info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.profile-info p {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.bio {
+    color: #555;
+}
+
+/* BUTTON */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: var(--blue);
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: var(--gold);
+    color: #000;
+}
+
+/* ===============================
+   SMALL MOBILE (max 480px)
+================================ */
+@media (max-width: 480px){
+
+    /* SECTION */
+    .faculty-details{
+        padding: 30px 10px;
+    }
+
+    /* CARD */
+    .details-card{
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    /* IMAGE */
+    .profile-header img{
+        width: 100px;
+        height: 100px;
+    }
+
+    /* TEXT */
+    .profile-header h2{
+        font-size: 20px;
+    }
+
+    .badge-exp{
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .rating{
+        font-size: 14px;
+    }
+
+    /* INFO */
+    .profile-info{
+        text-align: left;
+    }
+
+    .profile-info p{
+        font-size: 14px;
+    }
+
+    .bio{
+        font-size: 13px;
+    }
+
+    /* BUTTON */
+    .back-btn{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* ===============================
+   MOBILE (481px - 768px)
+================================ */
+@media (min-width: 481px) and (max-width: 768px){
+
+    .faculty-details{
+        padding: 40px 15px;
+    }
+
+    .details-card{
+        padding: 25px;
+    }
+
+    .profile-header img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-header h2{
+        font-size: 22px;
+    }
+
+    .profile-info p{
+        font-size: 14px;
+    }
+
+    .back-btn{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ===============================
+   TABLET (769px - 1024px)
+================================ */
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .details-card{
+        max-width: 80%;
+        padding: 30px;
+    }
+
+    .profile-header img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .profile-header h2{
+        font-size: 24px;
+    }
+}

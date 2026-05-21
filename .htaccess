@@ -1,0 +1,53 @@
+RewriteEngine On
+
+# ✅ Remove .php extension from URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [L]
+
+RewriteRule ^about$ pages/about.php [L]
+RewriteRule ^courses$ pages/courses.php [L]
+RewriteRule ^faculty$ pages/faculty.php [L]
+RewriteRule ^results$ pages/results.php [L]
+RewriteRule ^gallery$ pages/gallery.php [L]
+RewriteRule ^downloads$ pages/downloads.php [L]
+RewriteRule ^contact$ pages/contact.php [L]
+
+
+# ✅ Pretty URL for course details
+RewriteRule ^course/([a-zA-Z0-9-]+)$ pages/course_details.php?slug=$1 [L,QSA]
+
+# ✅ Pretty URL for courses page
+RewriteRule ^courses$ pages/courses.php [L,QSA]
+
+# ✅ Pretty URL for faculty page
+RewriteRule ^faculty$ pages/faculty.php [L,QSA]
+
+# ✅ Pretty URL for contact page
+RewriteRule ^contact$ pages/contact.php [L,QSA]
+
+# ✅ Pretty URL for about page
+RewriteRule ^about$ pages/about.php [L,QSA]
+
+# ✅ Admin clean URL (optional)
+RewriteRule ^admin$ admin/index.php [L,QSA]
+
+# ✅ Prevent direct access to sensitive files
+<FilesMatch "\.(env|log|ini|sql|sh)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# ✅ Disable directory listing
+Options -Indexes
+
+# ✅ Set default index file
+DirectoryIndex index.php
+
+# ✅ Basic security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+

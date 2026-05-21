@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --blue:#0A2540;
+  --gold:#F5B400;
+  --white:#FFFFFF;
+  --light:#f5f7fb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:var(--light);
+  color:#333;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*  HERO  */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: url('../../uploads/images/hero.webp') no-repeat center/cover;
+  text-align:center;
+  min-height: 100vh;
+  padding: 40px 15px;
+}
+
+.hero-title{
+  font-weight:700;
+  font-size: 28px;
+  color:#ffff;
+}
+
+.hero-subtitle{
+  font-size:18px;
+  margin:15px 0;
+  color:#ddd;
+}
+
+/*  BUTTON  */
+.btn-outline-light{
+  border-radius:30px;
+  padding:12px 28px;
+  background: #e0a800;
+}
+
+.btn-outline-lightt{
+  border-radius:30px;
+  padding:12px 28px;
+  background: #333;
+  color: #ddd;
+}
+
+.btn-outline-lightt:hover{
+  background: #ddd;
+  color: #000;
+}
+
+/*  SECTION  */
+section{
+  padding:60px 0;
+}
+
+section h2{
+  font-weight:700;
+  margin-bottom:15px;
+  color:var(--blue);
+}
+
+section p{
+  color:#666;
+}
+
+/*  CARD  */
+.card{
+  border:none;
+  border-radius:15px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+/*  COURSE  */
+.course-card {
+    background: #fff8e1;              
+    border: 1px solid #ffc107;        
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s;
+    max-width: 540px;
+    align-items: center;
+}
+
+.course-card h5 {
+  color: brown;
+}
+
+.btn-sm {
+  background: #e0a800;
+}
+
+.btn-sm:hover{
+  background: transparent;
+  color: #0d6efd;
+}
+
+/* HOVER EFFECT  */
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.3);
+}
+
+/*  STUDENT  */
+.student-card{
+  padding:15px;
+  border-radius:15px;
+  background:#fff;
+  text-align:center;
+  transition:0.3s;
+}
+
+.student-card img{
+  height:180px;
+  width:100%;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+.student-card:hover{
+  transform:translateY(-8px);
+}
+
+/*  FACULTY  */
+.card img{
+  height:200px;
+  width:100%;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/*  TESTIMONIAL  */
+.testimonial-card{
+  padding:25px;
+  border-radius:15px;
+  background:#fff;
+  text-align:center;
+  height:100%;
+}
+
+/* arrows */
+.carousel-control-prev::after {
+    content: "❮";
+    font-size: 35px;
+    color: #000;
+    margin-left: -250px !important;
+    background: transparent !important;
+}
+
+.carousel-control-next::after {
+    content: "❯";
+    font-size: 35px;
+    color: #000;
+    margin-right: -250px;
+    background: transparent !important;
+}
+
+/* Hover effect */
+.carousel-control-prev:hover::after,
+.carousel-control-next:hover::after {
+    color: #0d6efd;
+}
+
+/*  ENQUIRY SECTION  */
+.enquiry-section {
+    padding: 70px 0;
+    background: linear-gradient(135deg, transparent, #4a90e2);
+    color: #fff;
+}
+
+/* Titles */
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+/* FORM CARD */
+.enquiry-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* INPUTS */
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Focus effect */
+.enquiry-form input:focus,
+.enquiry-form select:focus,
+.enquiry-form textarea:focus {
+    border-color: #F5B400;
+    outline: none;
+    box-shadow: 0 0 5px rgba(245,180,0,0.5);
+}
+
+/* BUTTONS */
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Clear */
+.btn-clear {
+    background: #6c757d;
+    color: #fff;
+    margin-right: 10px;
+}
+
+/* Submit */
+.btn-submit {
+    background: #F5B400;
+    color: #0A2540;
+    font-weight: bold;
+}
+
+/* Hover */
+.btn-submit:hover {
+    background: #0A2540;
+    color: #F5B400;
+}
+
+.btn-clear:hover {
+    background: #e0a800 !important;
+}
+/*  ANIMATION  */
+.card, .hero, section{
+  animation:fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* SMALL MOBILE (max 480px) */
+@media (max-width: 480px){
+
+    /* HERO */
+    .hero{
+        height: auto;
+        padding: 60px 15px;
+    }
+
+    .hero-title{
+        font-size: 28px;
+    }
+
+    .hero-subtitle{
+        font-size: 14px;
+    }
+
+    /* BUTTONS */
+    .btn-outline-light,
+    .btn-outline-lightt{
+        padding: 10px 18px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    /* SECTION */
+    section{
+        padding: 40px 15px;
+    }
+
+    section h2{
+        font-size: 22px;
+    }
+
+    /* CARD */
+    .card{
+        margin-bottom: 15px;
+    }
+
+    /* COURSE */
+    .course-card{
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    /* STUDENT */
+    .student-card img{
+        height: 140px;
+    }
+
+    /* FACULTY IMAGE */
+    .card img{
+        height: 160px;
+    }
+
+    /* TESTIMONIAL */
+    .testimonial-card{
+        padding: 15px;
+    }
+
+    /* ENQUIRY */
+    .section-title{
+        font-size: 24px;
+    }
+
+    .section-subtitle{
+        font-size: 14px;
+    }
+
+    .enquiry-form{
+        padding: 20px;
+    }
+
+    .btn{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/*  MOBILE (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px){
+
+    .hero{
+        height: auto;
+        padding: 70px 20px;
+    }
+
+    .hero-title{
+        font-size: 48px;
+    }
+
+    .hero-subtitle{
+        font-size: 16px;
+    }
+
+    section{
+        padding: 50px 20px;
+    }
+
+    .course-card{
+        max-width: 100%;
+    }
+
+    .student-card img{
+        height: 160px;
+    }
+
+    .card img{
+        height: 180px;
+    }
+
+}
+
+/* TABLET (769px - 1024px)*/
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .hero-title{
+        font-size: 42px;
+    }
+
+    section{
+        padding: 60px 30px;
+    }
+
+    .course-card{
+        max-width: 100%;
+    }
+
+    .card img{
+        height: 190px;
+    }
+}
